@@ -42,7 +42,7 @@ function Nav() {
               ))}
             </ul>
           </div>
-          <div className="absolute inset-0 -z-10 bg-black opacity-20"></div>
+          <div className="absolute inset-0 -z-10 bg-black opacity-20 md:hidden"></div>
         </>
       ) : (
         <></>
