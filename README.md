@@ -4,11 +4,11 @@ A single page template for news website
 
 ## Screenshots
 
-- Desktop design
+- **Desktop design**
 
   ![Desktop view](./screenshots/desktop.png)
 
-- Mobile design
+- **Mobile design**
 
   ![Mobile view](./screenshots/mobile.png)
 
