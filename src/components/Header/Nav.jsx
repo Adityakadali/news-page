@@ -11,7 +11,7 @@ function Nav() {
       <ul className="hidden gap-4 md:flex">
         {navItems.map((e, i) => (
           <li key={i} className="text-slate-700 hover:text-orange-400">
-            <a className="text-lg font-medium" href={`/${e}`}>
+            <a className="text-lg font-bold" href={`/${e}`}>
               {e}
             </a>
           </li>
@@ -25,7 +25,7 @@ function Nav() {
       </button>
       {navState ? (
         <>
-          <div className="fixed top-0 right-0 z-10 h-screen w-9/12 bg-white py-40 px-6 md:hidden">
+          <div className="fixed top-0 right-0 z-10 h-screen w-9/12 bg-white py-40 px-10 md:hidden">
             <button
               className="absolute right-6 top-6"
               onClick={() => setNavState(!navState)}

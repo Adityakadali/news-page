@@ -40,13 +40,13 @@ function Hero() {
         </div>
 
         <div className="bg-slate-900 p-6">
-          <h2 className="text-xl font-medium text-orange-300">New</h2>
-          <div className="flex flex-col justify-between  divide-y divide-solid pt-6">
+          <h2 className="text-3xl font-bold text-orange-300">New</h2>
+          <div className="flex flex-col justify-between  divide-y divide-solid">
             {newItems.map((e, i) => {
               return (
-                <div className="py-4" key={i}>
-                  <h3 className="text-slate-50">{e.title}</h3>
-                  <p className="text-slate-100">{e.subtitle}</p>
+                <div className="py-6" key={i}>
+                  <h3 className="text-lg font-bold text-slate-50">{e.title}</h3>
+                  <p className="mt-2 text-slate-100">{e.subtitle}</p>
                 </div>
               );
             })}
