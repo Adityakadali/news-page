@@ -1,11 +1,27 @@
 import HeroImage from "../assets/images/image-web-3-desktop.jpg";
 
 function Hero() {
+  const newItems = [
+    {
+      title: "Hydrogen VS Electric Cars",
+      subtitle: "Will hydrogen-fueled cars ever catch up to EVs?",
+    },
+    {
+      title: "The Downsides of AI Artistry",
+      subtitle:
+        "What are the possible adverse effects of on-demand AI image generation?",
+    },
+    {
+      title: "Is VC Funding Drying Up?",
+      subtitle:
+        "Private funding by VC firms is down 50% YOY. We take a look at what that means.",
+    },
+  ];
   return (
     <section>
       <div className="container mx-auto my-4 flex flex-col gap-4 px-6 md:grid md:grid-cols-3">
         <div className="col-span-2 flex flex-col gap-4">
-          <img src={HeroImage} alt="image of web-3" />
+          <img src={HeroImage} alt="web-3" />
           <div className="flex flex-col gap-4 md:grid md:grid-cols-2">
             <h1 className="text-3xl font-bold leading-tight md:text-5xl">
               The Bright Future of Web 3.0?
@@ -20,6 +36,20 @@ function Hero() {
                 Read more
               </button>
             </div>
+          </div>
+        </div>
+
+        <div className="bg-slate-900 p-6">
+          <h2 className="text-xl font-medium text-orange-300">New</h2>
+          <div className="flex flex-col justify-between  divide-y divide-solid pt-6">
+            {newItems.map((e, i) => {
+              return (
+                <div className="py-4" key={i}>
+                  <h3 className="text-slate-50">{e.title}</h3>
+                  <p className="text-slate-100">{e.subtitle}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

@@ -11,7 +11,7 @@ function Nav() {
       <ul className="hidden gap-4 md:flex">
         {navItems.map((e, i) => (
           <li key={i} className="text-slate-700 hover:text-orange-400">
-            <a className="text-lg font-semibold" href={`/${e}`}>
+            <a className="text-lg font-medium" href={`/${e}`}>
               {e}
             </a>
           </li>
