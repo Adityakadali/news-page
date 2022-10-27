@@ -25,7 +25,7 @@ function Nav() {
       </button>
       {navState ? (
         <>
-          <div className="absolute top-0 right-0 h-screen w-9/12 bg-white py-40 px-6 md:hidden">
+          <div className="fixed top-0 right-0 z-10 h-screen w-9/12 bg-white py-40 px-6 md:hidden">
             <button
               className="absolute right-6 top-6"
               onClick={() => setNavState(!navState)}
